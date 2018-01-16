@@ -29,13 +29,24 @@ $aluno->insert();
 echo $aluno;
 */
 
-$usuario = new Usuario();
+//Alterar um usuario
+/*$usuario = new Usuario();
 
 $usuario->loadbyId(7);
 
 $usuario->update("professor", "!@#$%&");
 
+echo $usuario; */
+
+//deletando um usuario
+$usuario = new Usuario();
+
+$usuario->loadbyId(8);
+
+$usuario->delete();
+
 echo $usuario;
+
 
 /*$sql = new Sql();
 
